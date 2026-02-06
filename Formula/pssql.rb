@@ -1,8 +1,8 @@
 class Pssql < Formula
   desc "PostgreSQL Connection Manager"
   homepage "https://github.com/faustobranco/pssql"
-  url "https://github.com/faustobranco/pssql/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "ea6648eb363bd72b7d4c4cf07c850e70751037bd5787e47d2b20bb7c24b1825f"
+  url "https://github.com/faustobranco/pssql/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "9b92f84173169c12a2e20b41d51bdb87d3e0b5ea59e25fdbbe2d4f630d79326b"
   license "MIT"
 
   depends_on "go" => :build
