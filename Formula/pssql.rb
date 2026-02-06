@@ -13,15 +13,15 @@ class Pssql < Formula
     zsh_completion.install "completion/_pssql.zsh" => "_pssql"
     bash_completion.install "completion/_pssql.bash" => "pssql"
     etc.install "pssql.json" => "pssql.json.example"
-    end
+  end  
 
-    def caveats
-        <<~EOS
-        To get started, create your configuration directory and copy the example file:
-            mkdir -p ~/.pssql
-            cp #{etc}/pssql.json.example ~/.pssql/pssql.json
-        EOS
-    end
+  def caveats
+    <<~EOS
+    To get started, create your configuration directory and copy the example file:
+        mkdir -p ~/.pssql
+        cp #{etc}/pssql.json.example ~/.pssql/pssql.json
+    EOS
+  end
 
   test do
     system "#{bin}/pssql", "--version"
